@@ -10,4 +10,9 @@ describe Punto do
       expect(Punto.new(0,0).y).to eq(0)
     end
   end
+  context "Métodos de instancia" do
+    it "Se muestra un punto correctamente formateado" do
+      expect(Punto.new(0,0).to_s).to eq("(0,0)")
+    end
+  end
 end
