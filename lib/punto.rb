@@ -12,15 +12,16 @@ class Punto
   attr_reader :y
 
   # método para la creación de un objeto punto
-  # @param x, y [Numeric]
-  # @retun un objecto
+  # @param x [Numeric]
+  # @param y [Numeric]
+  # @return un objecto
   def initialize(x,y)
     @x, @y = x, y
   end
 
   #metodo para convertir en una cadena un punto
   # @param sin parámetros 
-  # @retun una cadena [String] 
+  # @return una cadena [String] 
   def to_s
     "(#{@x},#{@y})"
   end
